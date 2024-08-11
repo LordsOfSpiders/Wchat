@@ -7,6 +7,13 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+@keyframes AnimB {
+    0%{background-color:#1e00ff; border-radius: 50;}
+    25%{background-color:#7300ff;border-radius: 60;}
+    50%{background-color:#b700ff;border-radius: 70;}
+    100%{background-color:#1e00ff;border-radius: 50;}
+}
+
 .blob{
     animation: AnimB 10s ease infinite;
     margin: 0 auto;
@@ -22,18 +29,9 @@ body{
 	border-radius: 50%;
     filter: blur(200px);
     z-index: -2;
-
-   @keyframes AnimB {
-        0%{background-color:#1e00ff;}
-        25%{background-color:#7300ff;}
-        50%{background-color:#fb00ff;}
-        75%{background-color:#e066ff;}
-        100%{background-color:#1e00ff;}
-    }
- 
-
 }
 .navbar{  
+    position: relative;
     text-decoration: none;
     background-color:rgba(0, 0, 0, 0.335);
     backdrop-filter: blur(100px);
@@ -57,7 +55,7 @@ body{
 }
 
 .btn:hover{
-    background:linear-gradient(45deg, #0008ff 0%, #ff00f7 100%); 
+    background-color: #003cff;
     color: #fff;
     box-shadow: 0px 0px 26px 3px #5900ff;
 }
@@ -96,6 +94,7 @@ body{
     color: #fff;
     border: 1px solid #fff;
     cursor: pointer;
+    
 }
 
 .btncenter:hover{
@@ -118,13 +117,29 @@ body{
 
 
 h1{
-    color: #fff;
+    font-size: 70px;
+    filter: drop-shadow(-1px 0px 25px #50ffc5);
+    animation: animationName 15s ease infinite;
+    background: linear-gradient(90deg, #ffd900 0%, #00bfff 100%);
     margin-top: 20px;
+    background-clip: text;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    
 }
+
+
+@keyframes animationName {
+    0%{filter: drop-shadow(-1px 0px 25px   #50ffc5);}
+    50%{filter: drop-shadow(-1px 0px 25px  #11ff00);}
+    75%{filter: drop-shadow(-1px 0px 25px  #fbf700);}
+    100%{filter: drop-shadow(-1px 0px 25px #50ffc5);}
+}
+
 p{
     color: #fff;
     margin-top: 20px;
 }
-
+                
 
 
