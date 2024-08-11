@@ -8,19 +8,30 @@ body{
 }
 
 .blob{
+    animation: AnimB 10s ease infinite;
     margin: 0 auto;
     position:absolute;
     display: block;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 50px;
-    background:#1e00ff;
+    bottom: 120px;
+    background-color:#1e00ff;
 	height: 500px;
-	width: 520px;
+	width: 500px;
 	border-radius: 50%;
     filter: blur(200px);
     z-index: -2;
+
+   @keyframes AnimB {
+        0%{background-color:#1e00ff;}
+        25%{background-color:#7300ff;}
+        50%{background-color:#fb00ff;}
+        75%{background-color:#e066ff;}
+        100%{background-color:#1e00ff;}
+    }
+ 
+
 }
 .navbar{  
     text-decoration: none;
